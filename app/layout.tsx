@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description: 'A simple website with Next.js',
 };
 
+// ... existing imports
+import Footer from './components/Footer';
+
 export default function RootLayout({
   children,
 }: {
@@ -20,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         <main className="container mx-auto p-4">{children}</main>
+        <Footer />
       </body>
     </html>
   );
